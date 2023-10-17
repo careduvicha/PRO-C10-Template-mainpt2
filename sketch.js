@@ -7,7 +7,7 @@ function preload(){
   shipImg1 = loadAnimation("ship-1.png");
   //shipImg1 = loadAnimation("ship-1.png");
   //shipImg1 = loadAnimation("ship-1");
-  //shipImg1 = loadAnimation("ship-1.png","ship-2.png","ship-1.png","ship-2.png");
+  shipImg1 = loadAnimation("ship-1.png","ship-2.png","ship-1.png","ship-2.png");
   //shipImg1 = loadAnimation("ship-1","ship-2","ship-1","ship-2");
   
   seaImg = loadImage("sea.png");
@@ -28,6 +28,7 @@ function setup(){
   ship.addAnimation("movingShip",shipImg1);
   ship.scale =0.25;
   
+  
 }
 
 function draw() {
@@ -38,7 +39,7 @@ function draw() {
   if(sea.x < 0){
     //sea.x = 0;
     //sea.x = sea.width;
-    //sea.x = sea.width/8;
+  sea.x = sea.width/8;
     //sea.y = height;
   }
 
